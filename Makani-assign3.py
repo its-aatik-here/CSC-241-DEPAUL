@@ -34,8 +34,12 @@ def isLength():
         print ("Your password is not atleast 8 characters in length")
 isLength ()
 
-# def hasUpperCase():
-#     #your code here
+def hasUpperCase():
+    for letter in pwd
+        if (letter.isupper()):
+            print(f"{pwd} atleast one uppercase")
+        else:
+            print(f"{pwd} has no upper case")
 
 # def hasLowerCase():
 #     #your code here
