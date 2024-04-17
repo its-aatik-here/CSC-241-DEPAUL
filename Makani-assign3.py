@@ -27,20 +27,23 @@ commonList = ['0123456','123456789','picture1','password','12345678','111111',
 
 pwd = input ("enter your password: ")
 
-def isLength():
-    if len(pwd) >= 8:
-        print ("Your password passes the length test")
-    else:
-        print ("Your password is not atleast 8 characters in length")
-isLength ()
+# def isLength():
+#     if len(pwd) >= 8:
+#         print ("Your password passes the length test")
+#     else:
+#         print ("Your password is not atleast 8 characters in length")
+# isLength ()
 
 def hasUpperCase():
     success = False
-    for letter in pwd
-        if (letter.isupper()):
-            print(f"{pwd} atleast one uppercase")
-        else:
-            print(f"{pwd} has no upper case")
+    for letter in pwd:
+        if(letter.isupper()):
+            success = True
+    if (success == True):
+        print(f"{pwd} atleast one uppercase")
+    else:
+        print(f"{pwd} has no upper case")
+hasUpperCase()
 
 # def hasLowerCase():
 #     #your code here
