@@ -35,6 +35,7 @@ def isLength():
 isLength ()
 
 def hasUpperCase():
+    success = False
     for letter in pwd
         if (letter.isupper()):
             print(f"{pwd} atleast one uppercase")
