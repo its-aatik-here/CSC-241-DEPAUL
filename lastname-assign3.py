@@ -1,26 +1,3 @@
-def isLength(pwd):
-    #your code here
-
-def hasUpperCase(pwd):
-    #your code here
-
-def hasLowerCase(pwd):
-    #your code here
-
-def hasDigit(pwd):
-    #your code here
-
-def hasSymbol(pwd):
-    #your code here
-        
-def hasLessThan3(pwd):
-     #your code here
-
-
-def isCommon(pwd):
-     #your code here
-   
-
 commonList = ['0123456','123456789','picture1','password','12345678','111111',
            '123123','12345','1234567890','senha','1234567','qwerty','abc123',
            'Million2','000000','1234','iloveyou','aaron431','password1','qqww1122',
@@ -48,3 +25,26 @@ commonList = ['0123456','123456789','picture1','password','12345678','111111',
            'ginger','flower','333333','1111111111','robert','samsung','a12345','loveme',
            'gabriel','alexander','cheese','passw0rd','142536','peanut','11223344','thomas','angel1']
 
+pwd = input ("enter your password")
+
+def isLength():
+    #your code here
+
+def hasUpperCase():
+    #your code here
+
+def hasLowerCase():
+    #your code here
+
+def hasDigit():
+    #your code here
+
+def hasSymbol():
+    #your code here
+        
+def hasLessThan3():
+     #your code here
+
+
+def isCommon():
+     #your code here
