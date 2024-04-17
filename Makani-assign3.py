@@ -25,26 +25,30 @@ commonList = ['0123456','123456789','picture1','password','12345678','111111',
            'ginger','flower','333333','1111111111','robert','samsung','a12345','loveme',
            'gabriel','alexander','cheese','passw0rd','142536','peanut','11223344','thomas','angel1']
 
-pwd = input ("enter your password")
+pwd = input ("enter your password: ")
 
 def isLength():
-    #your code here
+    if len(pwd) >= 8:
+        print ("Your password passes the length test")
+    else:
+        print ("Your password is not atleast 8 characters in length")
+isLength ()
 
-def hasUpperCase():
-    #your code here
+# def hasUpperCase():
+#     #your code here
 
-def hasLowerCase():
-    #your code here
+# def hasLowerCase():
+#     #your code here
 
-def hasDigit():
-    #your code here
+# def hasDigit():
+#     #your code here
 
-def hasSymbol():
-    #your code here
+# def hasSymbol():
+#     #your code here
         
-def hasLessThan3():
-     #your code here
+# def hasLessThan3():
+#      #your code here
 
 
-def isCommon():
-     #your code here
+# def isCommon():
+#      #your code here
