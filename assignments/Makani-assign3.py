@@ -40,23 +40,51 @@ def hasUpperCase():
         if(letter.isupper()):
             success = True
     if (success == True):
-        print(f"{pwd} atleast one uppercase")
+        print(f"{pwd} has atleast one uppercase")
     else:
         print(f"{pwd} has no upper case")
 hasUpperCase()
 
-# def hasLowerCase():
-#     #your code here
+def hasLowerCase():
+    success = False
+    for letter in pwd:
+        if(letter.islower()):
+            success = True
+    if success == True:
+        print(f"{pwd} has atleast one lowercase")
+    else:
+        print(f"{pwd} has no lower case")
+hasLowerCase()
 
-# def hasDigit():
-#     #your code here
+def hasDigit():
+    success = False
+    for letter in pwd:
+        if (letter.isnumeric()):
+            success = True
+    if success == True:
+        print(f"{pwd} has atleast one number")
+    else:
+        print(f"{pwd} has no number in it")
+hasDigit ()
 
-# def hasSymbol():
-#     #your code here
-        
-# def hasLessThan3():
-#      #your code here
+def hasSymbol():
+    if any(char in ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_'] for char in pwd):
+        print(f"{pwd} has atleast one symbol")
+    else:
+        print(f"{pwd} has no symbol in it")
+hasSymbol()
+
+def hasLessThan3():
+    if len (pwd) < 3:
+        print(f"{pwd} has less than 3 characters")
+    else:
+        print(f"{pwd} has 3 or more characters")
+hasLessThan3()
 
 
-# def isCommon():
-#      #your code here
+def isCommon():
+    if pwd in commonList:
+        print(f"{pwd} is a common password")
+    else:
+        print(f"{pwd} is not a common password")
+isCommon()
