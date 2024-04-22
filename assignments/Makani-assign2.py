@@ -5,7 +5,7 @@ def convert():
     weightInKg = height/2.205
     heightInCm = height * 2.54
 
-    print (f"Your weight in kilograms is {WeightInKg} and your height in Centimeter is {HeightInCm}")
+    print (f"Your weight in kilograms is {weightInKg} and your height in Centimeter is {heightInCm}")
     
 convert ()
 
@@ -15,7 +15,7 @@ def getTipAmount():
     percentage = float (input ( "Enter the tip percentage " ))
     tip = (resturantBill * percentage/100)
 
-    print (f"The tip for a bill of ${ResturantBill} at {Percentage}% is {Tip}.")
+    print (f"The tip for a bill of ${resturantBill} at {percentage}% is {tip}.")
 getTipAmount ()
     
 #problem 3
@@ -32,6 +32,7 @@ def getFirst2():
 
     print(f"the first letter is {first}")
     print(f"the second letter is {second}")
+getFirst2()
 
 #problem 4
 def yodaSpeak():
