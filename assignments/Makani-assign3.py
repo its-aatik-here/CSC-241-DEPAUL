@@ -88,3 +88,14 @@ def isCommon():
     else:
         print(f"{pwd} is not a common password")
 isCommon()
+
+
+def checkPwd():
+    isLength()
+    hasUpperCase()
+    hasLowerCase()
+    hasDigit()
+    hasSymbol()
+    hasLessThan3()
+    isCommon()
+checkPwd()
