@@ -1,0 +1,9 @@
+def modify():
+    text = input ("enter a text: ")
+    upper = 0
+    for letter in text:
+        if letter.isupper():
+            upper = upper + 1
+    for x in range(upper):
+        print("^._.^")
+modify()
