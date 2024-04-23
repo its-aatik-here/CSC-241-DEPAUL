@@ -1,5 +1,5 @@
-word = input ("Enter a word: ")
 def countChars():
+    word = input ("Enter a word: ")
     lower = 0
     upper = 0
     digit = 0
