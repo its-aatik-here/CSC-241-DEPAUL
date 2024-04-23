@@ -25,16 +25,16 @@ commonList = ['0123456','123456789','picture1','password','12345678','111111',
            'ginger','flower','333333','1111111111','robert','samsung','a12345','loveme',
            'gabriel','alexander','cheese','passw0rd','142536','peanut','11223344','thomas','angel1']
 
-pwd = input ("enter your password: ")
+#pwd = input ("enter your password: ")
 
-def isLength():
+def isLength(pwd):
     if len(pwd) >= 8:
         print ("Your password passes the length test")
     else:
         print ("Your password is not atleast 8 characters in length")
-isLength ()
 
-def hasUpperCase():
+
+def hasUpperCase(pwd):
     success = False
     for letter in pwd:
         if(letter.isupper()):
@@ -43,9 +43,9 @@ def hasUpperCase():
         print(f"{pwd} has atleast one uppercase")
     else:
         print(f"{pwd} has no upper case")
-hasUpperCase()
 
-def hasLowerCase():
+
+def hasLowerCase(pwd):
     success = False
     for letter in pwd:
         if(letter.islower()):
@@ -54,9 +54,9 @@ def hasLowerCase():
         print(f"{pwd} has atleast one lowercase")
     else:
         print(f"{pwd} has no lower case")
-hasLowerCase()
 
-def hasDigit():
+
+def hasDigit(pwd):
     success = False
     for letter in pwd:
         if (letter.isnumeric()):
@@ -65,37 +65,39 @@ def hasDigit():
         print(f"{pwd} has atleast one number")
     else:
         print(f"{pwd} has no number in it")
-hasDigit ()
 
-def hasSymbol():
-    if any(char in ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_'] for char in pwd):
+
+def hasSymbol(pwd):
+    success = False
+    for letter in pwd:
+        if (letter.isalnum()):
+            success = True
+    if success == False:
         print(f"{pwd} has atleast one symbol")
     else:
         print(f"{pwd} has no symbol in it")
-hasSymbol()
 
-def hasLessThan3():
-    if len (pwd) < 3:
+
+def hasLessThan3(pwd):
+    if len(pwd) < 3:
         print(f"{pwd} has less than 3 characters")
     else:
         print(f"{pwd} has 3 or more characters")
-hasLessThan3()
 
 
-def isCommon():
-    if pwd in commonList:
-        print(f"{pwd} is a common password")
-    else:
-        print(f"{pwd} is not a common password")
-isCommon()
+def isCommon(pwd):
+     if pwd in commonList:
+         print(f"{pwd} is a common password")
+     else:
+         print(f"{pwd} is not a common password")
 
 
-def checkPwd():
-    isLength()
-    hasUpperCase()
-    hasLowerCase()
-    hasDigit()
-    hasSymbol()
-    hasLessThan3()
-    isCommon()
-checkPwd()
+
+def checkPwd(pwd):
+    isLength(pwd)
+    hasUpperCase(pwd)
+    hasLowerCase(pwd)
+    hasDigit(pwd)
+    hasSymbol(pwd)
+    hasLessThan3(pwd)
+
