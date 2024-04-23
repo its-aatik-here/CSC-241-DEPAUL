@@ -25,6 +25,80 @@ commonList = ['0123456','123456789','picture1','password','12345678','111111',
            'ginger','flower','333333','1111111111','robert','samsung','a12345','loveme',
            'gabriel','alexander','cheese','passw0rd','142536','peanut','11223344','thomas','angel1']
 
+def isLength(pwd):
+    if len(pwd) >= 8:
+        print ("Your password passes the length test")
+    else:
+        print ("Your password is not atleast 8 characters in length")
+
+
+def hasUpperCase(pwd):
+    success = False
+    for letter in pwd:
+        if(letter.isupper()):
+            success = True
+    if (success == True):
+        print(f"{pwd} has atleast one uppercase")
+    else:
+        print(f"{pwd} has no upper case")
+
+
+def hasLowerCase(pwd):
+    success = False
+    for letter in pwd:
+        if(letter.islower()):
+            success = True
+    if success == True:
+        print(f"{pwd} has atleast one lowercase")
+    else:
+        print(f"{pwd} has no lower case")
+
+
+def hasDigit(pwd):
+    success = False
+    for letter in pwd:
+        if (letter.isnumeric()):
+            success = True
+    if success == True:
+        print(f"{pwd} has atleast one number")
+    else:
+        print(f"{pwd} has no number in it")
+
+
+def hasSymbol(pwd):
+    success = False
+    for letter in pwd:
+        if not letter.isalnum():
+            success = True
+            break
+    if success == False:
+        print(f"{pwd} has atleast one symbol")
+    else:print(f"{pwd} has no symbol in it")
+
+
+def hasLessThan3(pwd):
+    if len(pwd) < 3:
+        print(f"{pwd} has less than 3 characters")
+    else:
+        print(f"{pwd} has 3 or more characters")
+
+
+def isCommon(pwd):
+     if pwd in commonList:
+         print(f"{pwd} is a common password")
+     else:
+         print(f"{pwd} is not a common password")
+
+def checkPwd(pwd):
+    isLength(pwd)
+    hasUpperCase(pwd)
+    hasLowerCase(pwd)
+    hasDigit(pwd)
+    hasSymbol(pwd)
+    hasLessThan3(pwd)
+    isCommon(pwd)
+
+
 #pwd = input ("enter your password: ")
 
 def isLength(pwd):
