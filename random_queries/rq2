@@ -1,5 +1,5 @@
-pizza = input ("What size of pizza do you want? ")
-toppings = float (input ("What toppings do you want? "))
+pizza = input ("Enter size of pizza (small, medium or large): ")
+toppings = float (input ("Enter number of toppings you want: "))
 if pizza == "small":
     cost = 1.50*toppings
 elif pizza == "medium":
