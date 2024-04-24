@@ -1,0 +1,9 @@
+pizza = input ("What size of pizza do you want? ")
+toppings = float (input ("What toppings do you want? "))
+if pizza == "small":
+    cost = 1.50*toppings
+elif pizza == "medium":
+    cost = 1.75*toppings
+elif pizza == "large":
+    cost = 2.00*toppings   
+print (f"Your total is: ${cost}")
