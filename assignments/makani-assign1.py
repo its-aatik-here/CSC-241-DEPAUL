@@ -7,4 +7,4 @@ print (age)
 gradeLevel = input ("enter your year in school:  ")
 print (gradeLevel)
 
-print (f"I am a { gradeLevel} and I have {eyeColor} eyes. ")
+print (f"I am a {gradeLevel} and I have {eyeColor} eyes. ")
