@@ -17,3 +17,18 @@ def modify():
     for x in range(upper):
         print("^._.^")
 modify()
+
+#Given two integer numbers, return their product only if the product is equal to or 
+#lower than 1000. Otherwise, return their sum.
+
+def product():
+    a = int(input("enter a number: "))
+    b= int(input("enter a number: "))
+    if a * b <= 1000:
+        print(a * b)
+    else:
+        print(a + b)
+product()        
+
+#Write a program to iterate the first 10 numbers, and in each 
+#iteration, print the sum of the current and previous number.
