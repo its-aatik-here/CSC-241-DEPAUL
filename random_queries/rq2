@@ -5,5 +5,8 @@ if pizza == "small":
 elif pizza == "medium":
     cost = 1.75*toppings
 elif pizza == "large":
-    cost = 2.00*toppings   
-print (f"Your total is: ${cost}")
+    cost = 2.00*toppings  
+#Add another pizza which is the jumbo piza and cost is 8.00 for unlimited toppings
+elif pizza == "jumbo":
+    cost = 8.00
+print (f"Your total for {pizza} pizza is: ${cost}")
