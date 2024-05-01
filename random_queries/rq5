@@ -46,4 +46,4 @@ def randWord(sentence):
     randNum = random.randint(0,len(wordlist)-3)
     print (randNum)
     print (wordlist[randNum],wordlist[randNum+1],wordlist[randNum+2])
-randWord("hell my name is Aatik Ali, how are you doing today ?")
+randWord("hello my name is Aatik Ali, how are you doing today ?")
