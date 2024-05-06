@@ -34,5 +34,5 @@ def filterpets ():
     print(f"The number of fish {fish}")
     print(f"The number of hamster {hamster}")
     print(f"The number of cat {cat}")
-    print (f"the number of dog {dog}")
+    print (f"The number of dog {dog}")
 filterpets()
