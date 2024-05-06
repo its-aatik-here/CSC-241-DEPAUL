@@ -74,9 +74,9 @@ def hasDigit(pwd):
 def hasSymbol(pwd):
         success = False
         for letter in pwd:
-            if (letter.isalnum()):
+            if (letter.isalnum()==False):
                 success = True
-        if success == False:
+        if success == True:
             print(f"{pwd} has atleast one symbol")
         else:
             print(f"{pwd} has no symbol in it")
