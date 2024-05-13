@@ -18,7 +18,9 @@ def printNth(nList, num):
     for i in range(0,len(nList),num):
         print (nList[i])  
     
-#Write a function removeNegatives(lst) that takes a list of integers as input and removes all negative numbers from the list. The function should modify the original list in place and return the modified list.
+#Write a function removeNegatives(lst) that takes a list of integers as input and removes all negative numbers from the list.
+#The function should modify the original list in place and return the modified list.
+
 def removeNegatives(lst):
     for i in range(len(lst) - 1, -1, -1):
         if lst[i] < 0:
