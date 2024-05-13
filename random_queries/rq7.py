@@ -9,5 +9,5 @@
 #     print (siuuu,end = " ")
 
 
-for num in range (0,10,2):
+for num in range (0,9,2):
     print(num,end = " ")
