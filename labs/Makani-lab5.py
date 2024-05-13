@@ -26,4 +26,5 @@ def removeNegatives(lst):
         if lst[i] < 0:
             lst.pop(i)
     print (lst)
+    
 code.interact(local=dict(globals(),**locals()))
