@@ -24,7 +24,21 @@ def printNth(nList, num):
 def removeNegatives(lst):
     for i in range(len(lst) - 1, -1, -1):
         if lst[i] < 0:
-            lst.pop(i)
+            lst.remove(i)
     print (lst)
-    
+
+
+
+
+#done this using the while loop.
+
+def removeNegatives(lst):
+    i = 0
+    while i < len(lst):
+        if lst[i] < 0:
+            lst.remove(i)
+        else:
+            i += 1
+    print (lst)
+
 code.interact(local=dict(globals(),**locals()))
