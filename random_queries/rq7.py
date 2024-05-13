@@ -18,7 +18,15 @@
 # for num in range (3,12,5):
 #     print(num,end = " ")
 
-count = 0
-for num in range (5,25,2):
-    count += 1
-print(count,end = " ")
+# count = 0
+# for num in range (5,25,2):
+#     count += 1
+#     print(num,end = " ")
+# print ()
+# print(count,end = " ")
+
+
+num = 2
+while num < 12:
+    num += 1
+    print(num,end = " ")
