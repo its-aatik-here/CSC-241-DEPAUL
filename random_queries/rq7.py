@@ -26,7 +26,15 @@
 # print(count,end = " ")
 
 
-num = 2
-while num < 12:
-    num += 1
-    print(num,end = " ")
+# num = 2
+# while num < 12:
+#     num += 1
+#     print(num,end = " ")
+
+# total = 0
+# for num in range (1,6):
+#     total += num
+# print (total)
+
+# for x in range (6,-2,-1):
+#     print(x,end = " ")
