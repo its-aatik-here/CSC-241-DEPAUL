@@ -4,7 +4,8 @@ def evenLetters(word):
     evens=""
     if len(word)>=3:
         for i in range(2,len(word),2):
-            evens+=word[i]
+            evens += word[i] + ""
+        evens = evens.rstrip()
         return evens
     else:
         return "the word is too short"
@@ -30,5 +31,5 @@ def guess(answer):
             print('You win!')
             break
 
-        
+
 code.interact(local=dict(globals(),**locals()))

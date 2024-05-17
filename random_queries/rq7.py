@@ -38,3 +38,25 @@
 
 # for x in range (6,-2,-1):
 #     print(x,end = " ")
+
+# num=30
+# while num >4:
+#     print(num)
+#     num = num/2
+
+# for x in range (11,-4,-2):
+#     print (x,end=" ")
+
+# total = 0
+# for num in range (1,15):
+#     total = total + num
+# print (total)
+
+total=0
+num = 0
+while num < 15:
+    total = total + num
+    num = num + 1
+print (f"the sum is = {total}")
+
+
