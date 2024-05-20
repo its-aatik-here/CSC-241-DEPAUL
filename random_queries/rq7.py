@@ -73,6 +73,14 @@ print (f"The number of letters are: {numL}")
 
 def countWords(text):
     count=0
-    list = split.text
+    textlist = text.split()
+    for word in textlist:
+        if word.isalpha():
+            count += 1
+    return count
+sentence = "The weather was great this weekend"
+numL = countWords(sentence)
+print (f"The number of words are: {numL}")
+
 
 # code.interact(local=dict(globals(), **locals()))
