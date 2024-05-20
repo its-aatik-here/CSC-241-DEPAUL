@@ -75,8 +75,7 @@ def countWords(text):
     count=0
     textlist = text.split()
     for word in textlist:
-        if word.isalpha():
-            count += 1
+        count += 1
     return count
 sentence = "The weather was great this weekend"
 numL = countWords(sentence)
