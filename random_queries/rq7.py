@@ -66,6 +66,13 @@ def countLetters(text):
     for char in text:
         if char.isalnum():
             count += 1
-    print (count)
+    return count
+sentence = "The weather was great this weekend"
+numL = countLetters (sentence)
+print (f"The number of letters are: {numL}")
 
-code.interact(local=dict(globals(), **locals()))
+def countWords(text):
+    count=0
+    list = split.text
+
+# code.interact(local=dict(globals(), **locals()))
