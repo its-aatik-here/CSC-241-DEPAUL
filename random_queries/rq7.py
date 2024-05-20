@@ -81,5 +81,14 @@ sentence = "The weather was great this weekend"
 numL = countWords(sentence)
 print (f"The number of words are: {numL}")
 
+#shorter way for above code
+def countWords(text):
+    count=0
+    textlist = text.split()
+    return len(textlist)
+sentence = "The weather was great this weekend"
+numL = countWords(sentence)
+print (f"The number of words are: {numL}")
+
 
 # code.interact(local=dict(globals(), **locals()))
