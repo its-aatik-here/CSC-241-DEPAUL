@@ -1,5 +1,3 @@
-import code
-
 def wordsearch(text,word):
     count = 0
     wList = text.split()
