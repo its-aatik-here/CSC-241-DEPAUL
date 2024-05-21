@@ -1,14 +1,14 @@
-#import code 
+import code 
 
 def crossOffMultiples(multiplesList, num):
+    list = []
+    multiplesList.append(True)
     for i in range (num+num,len(multiplesList),num):
         if i % num  == 0 and i!=0:
             multiplesList[i] = False
-    return (multiplesList)
-
-multiplesList = [True]*100
-crossOffMultiples(multiplesList,2)
-print (multiplesList)
+            list.append(i)
+    print (multiplesList)
+    print (list)
 
 def sieve():
     #your code here
@@ -16,4 +16,4 @@ def sieve():
     print("you will print all the prime numbers(the indexes for all the remaining True values)")
 
 
-#code.interact(local=dict(globals(), **locals()))
+code.interact(local=dict(globals(), **locals()))
