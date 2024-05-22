@@ -1,19 +1,22 @@
 import code 
 
 def crossOffMultiples(multiplesList, num):
-    list = []
-    multiplesList.append(True)
-    for i in range (num+num,len(multiplesList),num):
-        if i % num  == 0 and i!=0:
-            multiplesList[i] = False
-            list.append(i)
-    print (multiplesList)
-    print (list)
+    for i in range(num * 2, len(multiplesList), num):
+        multiplesList[i] = False
+    return (multiplesList)
 
-def sieve():
-    #your code here
+mList = [True] * 20 #after you get working for length 20, change to 100
+mList = crossOffMultiples(mList, 2) #test values other than 2
+print(mList)
 
-    print("you will print all the prime numbers(the indexes for all the remaining True values)")
-
-
+def sieve(n):
+    primes = []
+    multiplesList = [True] * (n + 1)
+    for num in range(2, int(n ** 0.5) + 1):
+        if multiplesList[num]:
+            multiplesList = crossOffMultiples(multiplesList, num)
+    for i in range(2, n + 1):
+        if multiplesList[i]:
+            primes.append(i)
+    print("Prime numbers from 2 to 100:", primes)
 code.interact(local=dict(globals(), **locals()))
