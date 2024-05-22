@@ -1,26 +1,23 @@
 def getData(filename):
     try:
-        #your code here
+        inFile= open(filename,"r")
+        sList = inFile.readlines()
+        inFile.close()
         
         return sList
     except:
         print("cannot access file")
         
-studentList = getData('students.txt')
+studentList = getData('random_queries/may 22 2024/student files/students.txt')
 print(studentList)
 
-def getGradeTotals(fileName):
-    sList = getData(fileName)
-    gradeTotals = []
-    #your code here
+# def getGradeTotals(fileName):
+#     sList = getData(fileName)
+#     gradeTotals = []
+#     #your code here
     
     
-    return gradeTotals
+#     return gradeTotals
 
-gradeNums = getGradeTotals('students.txt')
-print(f'There are {gradeNums[0]} freshman, {gradeNums[1]} sophomores, {gradeNums[0]} juniors, and {gradeNums[0]} seniors.')
-        
- 
-        
-                
-        
+# gradeNums = getGradeTotals('students.txt')
+# print(f'There are {gradeNums[0]} freshman, {gradeNums[1]} sophomores, {gradeNums[0]} juniors, and {gradeNums[0]} seniors.')
