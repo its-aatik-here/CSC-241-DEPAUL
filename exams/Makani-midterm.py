@@ -1,20 +1,20 @@
 def contest(score):
     if score >= 10:
-        print ("Gold Medal")
+        return ("Gold Medal")
     elif score <10 and score>=8:
-        print ("Silver Medal")
+        return ("Silver Medal")
     elif score <8 and score>=5:
-        print ("Bronze Medal")
+        return ("Bronze Medal")
     else:
-        print ("Thank you For Playing")
+        return ("Thank you For Playing")
 
 
 def isCSCourse(course):
     list=course.split()
     if list[0]=="CS":
-        print ("True")
+        return ("True")
     else:
-        print ("False")
+        return ("False")
 
 
 BDayMonthList = ['January', 'December', 'July', 'October', 'March', 'June',
@@ -26,4 +26,4 @@ BDayMonthList = ['January', 'December', 'July', 'October', 'March', 'June',
 
 def sameBDayCounter(month):
     count = BDayMonthList.count(month)
-    print(f"There are {count} students with a birthday in {month}.")
+    return(f"There are {count} students with a birthday in {month}.")
