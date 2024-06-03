@@ -14,7 +14,7 @@ AMA: Ask Me Anything
 ASL: Age/Sex/Location
 B4: Before
 BAE: Before Anyone Else
-B/C, BC: Because
+BC: Because
 BFF: Best Friends Forever
 BRB: Be Right Back
 BTAIM: Be That As It May
