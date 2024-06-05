@@ -11,28 +11,24 @@ def getFileText(fname):
     except:
         print(f"{fname} could not be opened.")
         return []  
-    
+getFileText("assignments/Glossary/glossary.txt")
+
     
 
 
-# def glossaryTerms(fname):
-#     tlst = getFileText(fname)
-#     #your code here
-    
-    
-#     printWordD(dictionary)
+def glossaryTerms(fname):
+    tlst = getFileText(fname)
+    for line in range (0,len(tlst)):
+        dictionary = tlst.split()   
+    printWordD(dictionary)
 
 
 # def findTerm(key):
     
 #     #your code here
 #     print("your key-value pair")
-    
-    
 
-# def printWordD(d):
-#     for word, freq in d.items():
-#         print(word + ':' + freq)
-        
-
+def printWordD(d):
+    for word, freq in d.items():
+        print(word + ':' + freq)
 code.interact(local=dict(globals(), **locals()))
