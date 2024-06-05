@@ -18,23 +18,23 @@ getFileText("assignments/Glossary/glossary.txt")
 
 def glossaryTerms(fname):
     tlst = getFileText(fname)
-    dictionary = {}
-    word = {}
-    freq = {}
-    for line in range(0,len(tlst)):
-        word,freq = line.split(":")
-    
-    printWordD(dictionary)
+    keyvaluelist = {}
+    for line in tlst:
+        keyvaluelist = line.split(": ")
+        key = keyvaluelist[0]
+        value = keyvaluelist [1]
+        glossary[key] = value
+    printWordD(glossary)
     
 
 
-# def findTerm(key):
+def findTerm(key):
     
-#     #your code here
-#     print("your key-value pair")
+    #your code here
+    print("your key-value pair")
 
 def printWordD(d):
-    for word, freq in d.items():
-        print(word + ':' + freq)
+    for key, value in d.items():
+        print(key + ':' + value)
 
 code.interact(local=dict(globals(), **locals()))
