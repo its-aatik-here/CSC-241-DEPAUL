@@ -18,9 +18,12 @@ getFileText("assignments/Glossary/glossary.txt")
 
 def glossaryTerms(fname):
     tlst = getFileText(fname)
-    print (tlst)
-    for line in range (0,len(tlst)):
-        
+    dictionary = {}
+    word = {}
+    freq = {}
+    for line in range(0,len(tlst)):
+        word,freq = line.split(":")
+    
     printWordD(dictionary)
     
 
@@ -33,4 +36,5 @@ def glossaryTerms(fname):
 def printWordD(d):
     for word, freq in d.items():
         print(word + ':' + freq)
+
 code.interact(local=dict(globals(), **locals()))
