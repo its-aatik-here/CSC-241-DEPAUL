@@ -30,8 +30,8 @@ def glossaryTerms(fname):
 
 def findTerm(key):
     
-    #your code here
-    print("your key-value pair")
+    value = glossary.get(key)
+    print(f"{key} means {value}")
 
 def printWordD(d):
     for key, value in d.items():
