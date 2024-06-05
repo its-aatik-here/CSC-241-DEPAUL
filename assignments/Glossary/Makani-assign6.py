@@ -18,9 +18,11 @@ getFileText("assignments/Glossary/glossary.txt")
 
 def glossaryTerms(fname):
     tlst = getFileText(fname)
+    print (tlst)
     for line in range (0,len(tlst)):
-        dictionary = tlst.split()   
+        
     printWordD(dictionary)
+    
 
 
 # def findTerm(key):
